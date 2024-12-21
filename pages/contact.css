@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Epilogue", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+header {
+    background-color: white;
+    padding: 20px 0;
+    color: #333;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.contact-form-section {
+    background-color: rgb(223, 223, 255);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-form-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-form-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.cta-btn {
+    background-color: #4c98af;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #377081;
+}
+
+.contact-details {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contact-details ul {
+    list-style: none;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.contact-details ul li {
+    margin-bottom: 10px;
+}
+
+.map {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.map iframe {
+    border-radius: 10px;
+}
+
+/* footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+} */
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 1rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+}
+
+
+footer {
+    background-color: #2C3E50;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    line-height: 1.6;
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    color: #ecf0f1;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section .social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-section .social-media a {
+    background-color: #34495E;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #34495E;
+    padding-top: 15px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4c98af;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+
+
+}
+
+button:hover {
+    background-color: #29505e;
+}
+
+
+.certification {
+    width: 100px;
+    height: auto;
+}

@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Epilogue", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #2c3e50;
+    padding: 1rem;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.services-intro {
+    background-color: rgb(223, 223, 255);
+    color: #333;
+    padding: 2rem;
+    text-align: center;
+}
+
+.services-intro h2 {
+    font-size: 36px;
+    margin-bottom: 1rem;
+}
+
+.services-intro p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.service {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    font-size: 24px;
+    color: #4e657c;
+}
+
+.service p {
+    font-size: 16px;
+    color: #555;
+}
+
+.testimonials {
+    background-color: #4e657c;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.testimonial {
+    width: 300px;
+    margin: 0 20px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact {
+    text-align: center;
+    padding: 2rem;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+}
+
+#contact-button {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #4c98af;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-button:hover {
+    background-color: #397183;
+}
+
+/* footer {
+    background-color: rgb(61, 61, 61);
+    color: #ffffffc2;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+} */
+
+
+footer {
+    background-color: #2C3E50;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    line-height: 1.6;
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    color: #ecf0f1;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section .social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-section .social-media a {
+    background-color: #34495E;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #34495E;
+    padding-top: 15px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4c98af;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #29505e;
+}
+
+
+.certification {
+    width: 100px;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .testimonial-slider {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+}

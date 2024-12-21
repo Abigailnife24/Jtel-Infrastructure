@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+body {
+    font-family: "Epilogue", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+nav.nav-bar {
+    display: flex;
+}
+
+nav.nav-bar>div {
+    color: white;
+    flex: 0.1;
+    display: flex;
+    place-items: center;
+    padding-left: 40px;
+}
+
+.nav-bar ul {
+    padding-left: 40px;
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    flex: 0.9;
+}
+
+li a {
+    text-decoration: none;
+    position: relative;
+    font-family: "Epilogue", serif;
+    font-size: 30px;
+}
+
+li a:visited {
+    color: rgba(54, 18, 18, 0.438) !important;
+}
+
+header {
+    width: 100vw;
+    background-color: white;
+}
+
+a {
+    color: white;
+}
+
+nav {
+    width: max-content;
+}
+
+.hero {
+    background-color: #4e657c;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.intro,
+.values,
+.team {
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.value2 {
+    display: flex;
+    gap: 50px;
+    padding-left: 250px;
+    margin: auto;
+}
+
+
+.team-btn {
+    display: flex;
+    font-size: 200px;
+    padding: 5px 20px 5px;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.join-btn {
+    background-color: #4c98af;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.join-btn:hover {
+    background-color: #3e5063;
+}
+
+.browse-btn {
+    background-color: #4c98af;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.browse-btn:hover {
+    background-color: #3e5063;
+}
+
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.team-member {
+    width: 30%;
+    text-align: center;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+footer {
+    font-family: "Epilogue", serif;
+    background-color: #2C3E50;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    line-height: 1.6;
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    color: #ecf0f1;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section .social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-section .social-media a {
+    background-color: #34495E;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #34495E;
+    padding-top: 15px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4c98af;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #29505e;
+}
+
+
+.certification {
+    width: 100px;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .testimonial-slider {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+}

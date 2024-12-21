@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story -Jtel Infrastrusture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./story.css">
+    <script src="../app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="../assets/Jtel logo.jpg" alt="Company logo"></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Our Story</h1>
+            <p style="color: #333;">Discover the history, mission, and vision that drives us to engineer a better
+                future.</p>
+        </div>
+    </section>
+
+    <section class="history">
+        <div class="history-content">
+            <div class="image-container">
+                <img src="../assets/construction-site-silhouettes_1127-3253.avif" alt="Our History"
+                    class="history-image">
+            </div>
+            <div class="text-container">
+                <h2>Our History</h2>
+                <p>Founded on 13th July 2022 in Lagos, Jtel began as a small startup with a bold vision. From
+                    humble beginnings, we've grown into a global leader in engineering solutions. Our journey is one of
+                    innovation, resilience, and commitment to excellence.</p>
+                <button class="accordion">Read More</button>
+                <div class="panel">
+                    <p>From our first project to the global expansion, our mission has been the same: deliver
+                        innovative, sustainable, and reliable engineering solutions that shape industries. Every
+                        challenge we've overcome has made us stronger and more dedicated to our vision of excellence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <div class="mission-content">
+            <div class="text-container">
+                <p><strong>To engineer solutions that drive progress and create value for our clients, communities, and
+                        the world at large.</strong></p>
+                <ul>
+                    <li>Innovation: Continuously exploring new technologies and approaches.</li>
+                    <li>Sustainability: Developing eco-friendly solutions for a sustainable future.</li>
+                    <li>Collaboration: Building strong partnerships for mutual growth.</li>
+                    <li>Integrity: Upholding the highest standards of professionalism and ethics.</li>
+                </ul>
+            </div>
+            <div class="image-container">
+                <img src="../assets/radio-mast-tower-telecoms.webp" alt="Mission" class="mission-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="vision">
+        <h2>Our Vision</h2>
+        <div class="vision-content">
+            <div class="image-container">
+                <img src="../assets/excavator-action_1112-1598.avif" alt="Vision" class="vision-image">
+            </div>
+            <div class="text-container">
+                <p>We envision a future where engineering solutions not only meet today's needs but also anticipate
+                    tomorrow's challenges. Through continuous innovation, we aim to lead the industry and make a
+                    positive, lasting impact on the world.</p>
+                <p><strong>Our goal is to create technologies that empower industries, improve lives, and contribute to
+                        a sustainable future.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are a leading engineering firm specializing in civil, mechanical, and electrical engineering
+                    solutions.</p>
+                <p><strong>Address:</strong> 69E, Abba Johnson crescent, akora villas,
+                    Adeniyi Jones, Ikeja,
+                    Lagos</p>
+                <p><strong>Phone:</strong> (+234) 705-555-7515</p>
+                <p><strong>Email:</strong> Email:info@jtel-engr.com.ng</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="./pages/services.html">Service</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                    <li><a href="./pages/story.html">Our story</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-media">
+                    <li><a href="https://www.twitter.com">X</a></li>
+                    <li><a href="https://www.facebook.com">facebook</a></li>
+                    <li><a href="https://www.gmail.com">Gmail</a></li>
+                </ul>
+                <h3>Subscribe</h3>
+                <input type="email" id="newsletter" placeholder="Enter your email">
+                <button onclick="subscribeNewsletter()">Subscribe</button>
+            </div>
+
+            <div class="footer-section">
+                <h3>Certifications</h3>
+                <p><img src="../assets/ISO certificate.jpg" alt="ISO Certification" class="certification"></p>
+                <h3>Request a Consultation</h3>
+                <a href="./pages/quote.html"><button class="quote-btn">Get a Quote</button></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Jtel Infrastructure. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Accordion functionality for the History section
+        document.addEventListener("DOMContentLoaded", function () {
+            const accordions = document.querySelectorAll(".accordion");
+
+            accordions.forEach(accordion => {
+                accordion.addEventListener("click", function () {
+                    const panel = this.nextElementSibling;
+                    panel.style.display = panel.style.display === "block" ? "none" : "block";
+                });
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>

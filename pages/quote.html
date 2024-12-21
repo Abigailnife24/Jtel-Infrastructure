@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote -Jtel Infrastructure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./quote.css">
+    <script src="../app.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Request a Quote</h1>
+        <p>Get a customized quote for your engineering project.</p>
+    </header>
+
+    <div class="container">
+        <form id="quoteForm">
+            <h2>Your Information</h2>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="companyName">Company Name (If applicable)</label>
+            <input type="text" id="companyName" name="companyName">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <h2>Project Information</h2>
+            <label for="projectType">Project Type</label>
+            <select id="projectType" name="projectType" required>
+                <option value="structural">Structural Engineering</option>
+                <option value="civil">Civil Engineering</option>
+                <option value="electrical">Electrical Engineering</option>
+                <option value="mechanical">Mechanical Engineering</option>
+                <option value="software">Software/Systems Engineering</option>
+                <option value="consulting">Consulting/Other</option>
+            </select>
+
+            <label for="projectDescription">Project Description</label>
+            <textarea id="projectDescription" name="projectDescription" rows="4" required></textarea>
+
+            <label for="startDate">Estimated Project Start Date</label>
+            <input type="date" id="startDate" name="startDate" required>
+
+            <label for="endDate">Estimated Project Completion Date</label>
+            <input type="date" id="endDate" name="endDate" required>
+
+            <label for="budget">Budget Range</label>
+            <select id="budget" name="budget" required>
+                <option value="1000-5000">$1,000 - $5,000</option>
+                <option value="5000-25000">$5,000 - $25,000</option>
+                <option value="25000-100000">$25,000 - $100,000</option>
+                <option value="100000+">$100,000+</option>
+            </select>
+
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" required>
+
+            <h2>Additional Information</h2>
+            <label for="attachments">Attachments (Optional)</label>
+            <input type="file" id="attachments" name="attachments">
+
+            <label for="comments">Additional Comments/Questions</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <button type="submit">Submit Quote Request</button>
+
+            <div id="responseMessage" class="success"></div>
+        </form>
+    </div>
+    <script>
+        document.getElementById('quoteForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Clear any previous error/success message
+            const responseMessage = document.getElementById('responseMessage');
+            responseMessage.textContent = '';
+
+            // Form validation
+            let valid = true;
+            const formElements = event.target.elements;
+
+            // Check if required fields are filled
+            for (let element of formElements) {
+                if (element.hasAttribute('required') && !element.value.trim()) {
+                    valid = false;
+                    responseMessage.textContent = 'Please fill in all required fields.';
+                    responseMessage.classList.add('error');
+                    break;
+                }
+            }
+
+            if (valid) {
+                responseMessage.textContent = 'Thank you for your request! We will get back to you shortly.';
+                responseMessage.classList.add('success');
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./contact.css">
+    <script src="../app.js" defer></script>
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../assets/Jtel logo.jpg" alt="Company logo">
+            </div>
+
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-form-section">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or want to start a project, feel free to contact us.</p>
+
+            <form id="contact-form" action="/submit" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="cta-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="contact-details">
+        <div class="container">
+            <h2>Our Contact Details</h2>
+            <p>Feel free to reach out to us.</p>
+            <ul>
+                <li><strong>Phone:</strong> (+234) 705-555-7515</li>
+                <li><strong>Email:</strong> info@jtel-engr.com.ng</li>
+                <li><strong>Address:</strong> 69E, Abba Johnson crescent, akora villas,
+                    Adeniyi Jones, Ikeja,</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="map">
+        <div class="container">
+            <h2>Our Location</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.2824803270123!2d3.3445441142668457!3d6.611781423966327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93d2fcaf2d0f%3A0xacd025f82cd3d057!2s69+Abba+Johnston+Cres%2C+Oba+Akran%2C+Ikeja!5e0!3m2!1sen!2sng!4v1538230731684"
+                width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are a leading engineering firm specializing in civil, mechanical, and electrical engineering
+                    solutions.</p>
+                <p><strong>Address:</strong> 69E, Abba Johnson crescent, akora villas,
+                    Adeniyi Jones, Ikeja,
+                    Lagos</p>
+                <p><strong>Phone:</strong> (+234) 705-555-7515</p>
+                <p><strong>Email:</strong> Email:info@jtel-engr.com.ng</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Service</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./story.html">Our story</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-media">
+                    <li><a href="https://www.twitter.com"><img src="../assets/X.svg" alt="X"></a></li>
+                    <li><a href="https://www.facebook.com"><img src="../assets/facebook.svg" alt="facebook"
+                                width="24px"></a></li>
+                    <li><a href="https://www.gmail.com"><img src="../assets/mail.svg" alt="Gmail"></a></li>
+                </ul>
+                <h3>Subscribe</h3>
+                <input type="email" id="newsletter" placeholder="Enter your email">
+                <button onclick="subscribeNewsletter()">Subscribe</button>
+            </div>
+
+            <div class="footer-section">
+                <h3>Certifications</h3>
+                <p><img src="../assets/ISO certificate.jpg" alt="ISO Certification" class="certification"></p>
+                <h3>Request a Consultation</h3>
+                <a href="./quote.html"><button class="quote-btn">Get a Quote</button></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Jtel Infrastructure. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        // Newsletter subscription function
+        function subscribeNewsletter() {
+            var email = document.getElementById("newsletter").value;
+            if (email) {
+                alert("Thank you for subscribing, " + email + "!");
+                document.getElementById("newsletter").value = ''; // Clear the input field after subscription
+            } else {
+                alert("Please enter a valid email address.");
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+    <footer
+        style="background-color:  rgb(61, 61, 61); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #ffffffc2; padding: 50px 0;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+
+            <div style="flex: 1; min-width: 250px; ">
+                <img src="../assets/Jtel logo.jpg" alt="Company Logo"
+                    style="width: 150px; margin-bottom: 15px; border-radius: 50%;">
+
+                <h2 style="margin-bottom: 10px;">Jtel Infrastructure</h2>
+                <p style="font-size: 18px; margin-bottom: 10px;">Address:69E, Abba Johnson crescent, akora villas,
+                    Adeniyi Jones, Ikeja,
+                    Lagos </p>
+                <p style="font-size: 18px; margin-bottom: 10px;">Phone: (+234) 705-555-7515</p>
+                <p style="font-size: 18px; margin-bottom: 10px;">Email:info@jtel-engr.com.ng </p>
+            </div>
+
+            <div style="flex: 1; min-width: 250px; padding: 10px;">
+                <form action="https://formspree.io/f/xldeyznp" id="myForm" method="post">
+                    <h3>Search Our Site</h3>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address... "
+                        style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: none; font-size: 14px;">
+                    <button id="submit" type="submit" value="submit"
+                        style="background-color: #4CAF50; color: #fff; padding: 15px 20px; border-radius: 5px; border: none; cursor: pointer; font-size: 16px; width: 100%;">Sign
+                        Up</button>
+                </form>
+            </div>
+
+            <div style="flex: 1; min-width: 250px; padding: 10px;">
+                <h3>Quick Links</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="./about.html" style="color: #fff; text-decoration: none;">❯About Us</a></li>
+                    <li><a href="./pages/services.html" style="color: #fff; text-decoration: none;">❯Services</a>
+                    </li>
+                    <li><a href="./contact.html" style="color: #fff; text-decoration: none;">❯Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; padding-top: 20px;">
+
+            <a href="https://www.facebook.com"><img src="../assets/facebook.svg" alt="facebook"
+                    style="width: 80px; margin-bottom:10px;"></a>
+
+            <a href="https://www.twitter.com" style="margin: 0 10px; "><img src="../assets/twitter.svg" alt="twitter"
+                    style="width: 50px; margin-bottom: 25px;"></a>
+
+            <a href="https://www.gmail.com" style="margin: 0 10px;"><img src="../assets/mail.svg" alt="Gmail"
+                    style="width: 50px; margin-bottom: 25px;"></a>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px; font-size: 14px; color: rgb(107, 106, 106);">
+            <p>&copy; 2024 Jtel. All Rights Reserved.</p>
+        </div>
+    </footer> -->
+
+
+
+    <script>
+        // Simple form validation
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+
+            // Basic validation
+            if (name === "" || email === "" || message === "") {
+                event.preventDefault();
+                alert("Please fill in all fields before submitting.");
+            } else {
+                alert("Thank you for contacting us!");
+            }
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
